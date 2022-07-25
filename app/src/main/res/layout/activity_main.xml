@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottle"
+        app:lottie_rawRes="@raw/background2"
+        app:lottie_loop="true"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.airbnb.lottie.LottieAnimationView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/editextbacraunt"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:textColor="#222222"
+            android:layout_height="wrap_content"
+            android:hint="Логин"
+            android:id="@+id/edittext1"></EditText>
+        <EditText
+            android:layout_margin="5dp"
+            android:textColor="#222222"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editextbacraunt"
+            android:hint="Парол"
+            android:padding="15dp"
+            android:id="@+id/edittext2"></EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:id="@+id/bottom1"
+                android:layout_margin="3dp"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:layout_weight="1"
+                android:background="@drawable/bottombacraunt"
+                android:layout_height="wrap_content"
+                android:text="Войти"></androidx.appcompat.widget.AppCompatButton>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:id="@+id/bottom2"
+                android:layout_weight="1"
+                android:textColor="#222222"
+                android:layout_margin="3dp"
+                android:textAllCaps="false"
+                android:background="@drawable/bottombacraunt"
+                android:layout_height="wrap_content"
+                android:text="Саздать аккаунт"></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
